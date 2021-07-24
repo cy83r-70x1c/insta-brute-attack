@@ -119,18 +119,15 @@ while true; do
                                                                                                   
                                                                                                   
 	${DEFCOL}"
-	echo -e "\n                \e[101m\e[1;77m  >>  Script By Hacker wasi << \e[0m\n"
-	echo -e "\n       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Hacker wasi \e[100m\e[1;77m << \e[0m\n\n"
+	echo -e "\n                \e[101m\e[1;77m  >>  Script By Hacker CYBER TOXIC << \e[0m\n"
+	echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m cy83r_70x1c \e[100m\e[1;77m << \e[0m\n\n"
 
 	# Displaying the main menu options and asking the user to enter a choice
 	echo -e "\e[1;92m[\e[0m\e[1;77m1\e[0m\e[1;92m]\e[0m\e[1;93m Auto Attack\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m2\e[0m\e[1;92m]\e[0m\e[1;93m Manual Attack\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m3\e[0m\e[1;92m]\e[0m\e[1;93m About\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m4\e[0m\e[1;92m]\e[0m\e[1;93m Update\e[0m"
-	echo -e "\e[1;92m[\e[0m\e[1;77m5\e[0m\e[1;92m]\e[0m\e[1;93m Subscribe\e[0m"
-	echo -e "\e[1;92m[\e[0m\e[1;77m6\e[0m\e[1;92m]\e[0m\e[1;93m Chat now\e[0m"
 	echo -e "\e[1;92m[\e[0m\e[1;77m7\e[0m\e[1;92m]\e[0m\e[1;93m Follow\e[0m"
-	echo -e "\e[1;92m[\e[0m\e[1;77m8\e[0m\e[1;92m]\e[0m\e[1;93m Watch Video How To use This\e[0m"
         echo -e "\e[1;92m[\e[0m\e[1;77m0\e[0m\e[1;92m]\e[0m\e[1;93m Exit\e[0m\n"
 	read -p $'\n\e[1;92m[\e[0m\e[1;77m*\e[0m\e[1;92m] Choose an option: \e[0m' option
 
@@ -138,53 +135,53 @@ while true; do
 	if [[ $option == 1 || $option == 01 ]]; then
 		# If the user choosed the option for auto attack
 
-		if [[ -f "$HOME/instahack/main/auto.sh" ]]; then
-			# If the main/auto.sh script file exists, then we continue
+		if [[ -f "$HOME/insta-brute/auto.sh" ]]; then
+			# If the auto.sh script file exists, then we continue
 
-			bash $HOME/instahack/main/auto.sh
+			bash $HOME/insta-brute/auto.sh
 		else
-			# If the main/auto.sh script file does not exists, then we display the error on the console screen
+			# If the auto.sh script file does not exists, then we display the error on the console screen
 
-			echo -e "\n${RED_REV}[ Error : main/auto.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
+			echo -e "\n${RED_REV}[ Error : auto.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
 			exit 1
 		fi
 	elif [[ $option == 2 || $option == 02 ]]; then
 		# If the user choosed the option for manual attack
 
-		if [[ -f "$HOME/instahack/main/manual.sh" ]]; then
-			# If the main/manual.sh script file exists, then we continue
+		if [[ -f "$HOME/insta-brute/manual.sh" ]]; then
+			# If the manual.sh script file exists, then we continue
 
-			bash $HOME/instahack/main/manual.sh
+			bash $HOME/insta-brute/manual.sh
 		else
-			# If the main/manual.sh script file does not exists, then we display the error on the console screen
+			# If the manual.sh script file does not exists, then we display the error on the console screen
 
-			echo -e "\n${RED_REV}[ Error : main/manual.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
+			echo -e "\n${RED_REV}[ Error : manual.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
 			exit 1
 		fi
 	elif [[ $option == 3 || $option == 03 ]]; then
 		# If the user choosed the option for about info displaying
 
-		if [[ -f "$HOME/instahack/core/about.sh" ]]; then
-			# If the core/about.sh script file exists, then we continue
+		if [[ -f "$HOME/insta-brute/about.sh" ]]; then
+			# If the about.sh script file exists, then we continue
 
-			bash $HOME/instahack/core/about.sh
+			bash $HOME/insta-brute/about.sh
 		else
-			# If the core/about.sh script file does not exists, then we display the error on the console screen
+			# If the about.sh script file does not exists, then we display the error on the console screen
 
-			echo -e "\n${RED_REV}[ Error : core/about.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
+			echo -e "\n${RED_REV}[ Error : about.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
 			exit 1
 		fi
 	elif [[ $option == 4 || $option == 04 ]]; then
 		# If the user choosed the option for updating the tool (script)
 
-		if [[ -f "$HOME/instahack/core/update.sh" ]]; then
-			# If the core/update.sh script file exists, then we continue
+		if [[ -f "$HOME/insta-brute/update.sh" ]]; then
+			# If the update.sh script file exists, then we continue
 
-			bash $HOME/instahack/core/update.sh
+			bash $HOME/insta-brute/update.sh
 		else
-			# If the core/update.sh script file does not exists, then we display the error on the console screen
+			# If the update.sh script file does not exists, then we display the error on the console screen
 
-			echo -e "\n${RED_REV}[ Error : core/update.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
+			echo -e "\n${RED_REV}[ Error : update.sh file missing. Fix this error by getting the proper script file ]${DEFCOL}"
 			exit 1
 		fi
 	elif [[ $option == 5 || $option == 05 ]]; then
@@ -203,7 +200,7 @@ while true; do
         elif [[ $option == 8 || $option == 08 ]]; then
 		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
 
-		am start -a android.intent.action.VIEW -d https://khabarbabal.online/file/MDRiYzUwNTgt > /dev/null 2>&1
+		am start -a android.intent.action.VIEW -d https://instagram.com/cy83r_70x1c?utm_medium=copy_link > /dev/null 2>&1
 	elif [[ $option == 0 ]]; then
 		# If the user choosed the option to exit the script
 
