@@ -35,10 +35,10 @@ function checkUpdates {
 		# ----
 		# We donot do that shit here, because we dont want to create a waste file for just marking purpose. Lets directly call the update.sh script if there are really any updates to the script
 		# ----
-		if [[ -f "bash $HOME/instahack/core/update.sh" ]]; then
+		if [[ -f "bash $HOME/insta-brute/update.sh" ]]; then
 			# If the update.sh script exists in the core/ folder of this project, then we continue
 		
-			bash $HOME/instahack/core/update.sh
+			bash $HOME/insta-brute/update.sh
 		else
 			# If the update.sh script does not exists, then we display the error message on the console screen
 
@@ -53,14 +53,14 @@ function checkUpdates {
 	if wget --spider https://raw.githubusercontent.com/evildevill/evildevillpatch/main/instahack.v.1.3 >/dev/null; then
 		# If there are updates to the path, then we launch the core/path.sh script file after checking it
 
-		if [[ -f "$HOME/instaHack/core/patch.txt" ]]; then
+		if [[ -f "$HOME/insta-brute/patch.txt" ]]; then
 			# If the core/patch.sh script file exists, then we launch it
 
-			bash $HOME/instahack/core/patch.sh
+			bash $HOME/insta-brute/patch.sh
 		else
-			# If the core/patch.sh script file does not exists, then we display the error message on the console screen
+			# If the patch.sh script file does not exists, then we display the error message on the console screen
 
-			echo -e "\n${RED_REV}[ Error : core/patch.sh is missing, please see the instructions on the README.md file and resolve the error ]${DEFCOL}"
+			echo -e "\n${RED_REV}[ Error : patch.sh is missing, please see the instructions on the README.md file and resolve the error ]${DEFCOL}"
 			echo -e "[${RED}!${DEFCOL}] Continuing without updating the tool..."
 			sleep 2
 			clear
@@ -185,19 +185,11 @@ while true; do
 			exit 1
 		fi
 	elif [[ $option == 5 || $option == 05 ]]; then
-		# If the user choosed the option to subscribe to the youtube channel, then we open the author's youtube channel
-
-		am start -a android.intent.action.VIEW -d https://youtube.com/channel/HackerWasii > /dev/null 2>&1
-	elif [[ $option == 6 || $option == 06 ]]; then
-		# If the user choosed the option for chat now
-
-		am start -a android.intent.action.VIEW -d https://wa.me/923137119351 > /dev/null 2>&1
-	elif [[ $option == 7 || $option == 07 ]]; then
 		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
 
-		am start -a android.intent.action.VIEW -d https://instagram.com/blckspidr > /dev/null 2>&1
+		am start -a android.intent.action.VIEW -d https://instagram.com/cy83r_70x1c?utm_medium=copy_link > /dev/null 2>&1
 
-        elif [[ $option == 8 || $option == 08 ]]; then
+        elif [[ $option == 6 || $option == 06 ]]; then
 		# If the user choosed the option for viewing author's instagram account, then we continue to open author's instagram account
 
 		am start -a android.intent.action.VIEW -d https://instagram.com/cy83r_70x1c?utm_medium=copy_link > /dev/null 2>&1
