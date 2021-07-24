@@ -28,15 +28,17 @@ DEFCOL="\033[00m"
 # Displaying the banner of the tool on the console screen
 clear
 echo -e "${YELLOW}
- ____  _  _  ___  ____   __    _   _    __    ___  _  _ 
-}
-(_  _)( \( )/ __)(_  _) /__\  ( )_( )  /__\  / __)( )/ )
- _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
-(____)(_)\_)(___/ (__)(__)(__)(_) (_)(__)(__)\___)(_)\_)
+ ,-..-. .-.   .---.  _______  .--.           ,---.   ,---.  .-. .-. _______ ,---.   
+|(||  \| |  ( .-._)|__   __|/ /\ \          | .-.\  | .-.\ | | | ||__   __|| .-'   
+(_)|   | | (_) \     )| |  / /__\ \____.___ | |-' \ | `-'/ | | | |  )| |   | `-.   
+| || |\  | _  \ \   (_) |  |  __  |`----==='| |--. \|   (  | | | | (_) |   | .-'   
+| || | |)|( `-'  )    | |  | |  |)|         | |`-' /| |\ \ | `-')|   | |   |  `--. 
+`-'/(  (_) `----'     `-'  |_|  (_)         /( `--' |_| \)\`---(_)   `-'   /( __.' 
+  (__)                                     (__)         (__)              (__)     
               
               ${DEFCOL}[${RED}#${DEFCOL}] ${BLUE}Manual Password Attack ${DEFCOL}[${RED}#${DEFCOL}]"
-echo -e "\n                \e[101m\e[1;77m  >>  Script By Blckspidr << \e[0m\n"
-echo -e "\n       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Hacker wasii \e[100m\e[1;77m << \e[0m\n"
+echo -e "\n                \e[101m\e[1;77m  >>  Script By CYBER TOXIC << \e[0m\n"
+echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m Hacker CYBER TOXIC \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username and password for the target instagram user
 read -p "[#] Enter the username of the target : " username
@@ -55,6 +57,6 @@ else
 	exit 1
 fi
 
-# Finally after all the tasks are executed, we again launch the instahack.sh file (the main script file of the tool)
-cd $HOME/instahack
-bash instahack.sh
+# Finally after all the tasks are executed, we again launch the Insta-brute.sh file (the main script file of the tool)
+cd $HOME/insta-brute-attack
+bash Insta-brute.sh
